@@ -33,32 +33,22 @@
         <div class="card" id="card-sala1">
             <div class="card-content">
                 <div class="content">
-                    <div><h2 class="titulo-card">Sala 2 - Bloco 1</h2></div>
-
                     <div class="card-info">
                         <ul>
-                            <li>Tamanho grande</li>
-                            <li>Limite de pessoas: 45</li>
-                            <li>Projetor: 1</li>
-                            <li>Ar-condicionado: 2</li>
+                            <li>Sala: </li>
+                            <li>Data:</li>
+                            <li>Horário:</li>
+                            <li>Justificativa: </li>
                         </ul>
                     </div>
 
-                    <div class="field is-horizontal" id="text">
-                        <div class="field-body">
-                            <div class="field">
-                            <div class="control">
-                                <textarea class="textarea is-info small" placeholder="Justificativa" rows="1" cols="60"></textarea>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
 
         <div>
-            <button class="button" id="but-enviar">Enviar</button>
+            <button class="button" id="but-enviar">Aceitar</button>
+            <button class="button is-danger" id="but-recusar">Recusar</button>
         </div>
     </div>
 </template>
@@ -131,21 +121,14 @@ export default {
     }
 
     .card .card-content .content div{
-        display: inline-block;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    div .titulo-card{
-        margin-left: -120px;
-        text-align: left;
-        margin-top: -50px;
-
     }
 
     .card-info{
         margin-left: 40px;
         text-align: left;
         font-size: 20px;
+        color: #16697A;
     }
     .card-info ul li{
         list-style: none;
@@ -163,6 +146,13 @@ export default {
         color: white;
         width: 200px;
         margin-left: 140px;
+        border-radius: 20px;
+    }
+    #but-recusar{
+        background-color: gray;
+        color: white;
+        width: 200px;
+        margin-left: 120px;
         border-radius: 20px;
     }
 </style>

@@ -10,7 +10,7 @@
             </div>
         </nav>
 
-        <h3>Buscar salas</h3>
+        <h3 class="titulo-salas">Buscar salas</h3>
 
         <div class="card" id="card">
             <div class="card-content">
@@ -68,33 +68,60 @@
                 </div>
             </div>
 
-            <b-calendar
+            <b-calendar class="calendar"
                 selected-variant="success"
                 today-variant="info"
                 nav-button-variant="primary"
             ></b-calendar>
         </div>
 
-        <div class="card">
+        <div class="card" id="card-sala1">
             <div class="card-content">
                 <div class="content">
-                Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
+                    <div><h2 class="titulo-card">Sala 2 - Bloco 1</h2></div>
+
+                    <div class="card-info">
+                        <ul>
+                            <li>Tamanho grande</li>
+                            <li>Limite de pessoas: 45</li>
+                            <li>Projetor: 1</li>
+                            <li>Ar-condicionado: 2</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="card-sala2">
             <div class="card-content">
                 <div class="content">
-                Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
+                    <div><h2 class="titulo-card">Sala 2 - Bloco 1</h2></div>
+
+                    <div class="card-info">
+                        <ul>
+                            <li>Tamanho grande</li>
+                            <li>Limite de pessoas: 45</li>
+                            <li>Projetor: 1</li>
+                            <li>Ar-condicionado: 2</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="card-sala3">
             <div class="card-content">
                 <div class="content">
-                Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
+                    <div id="titulo-card"><h2 class="titulo-card">Sala 2 - Bloco 1</h2></div>
+
+                    <div class="card-info">
+                        <ul>
+                            <li>Tamanho grande</li>
+                            <li>Limite de pessoas: 45</li>
+                            <li>Projetor: 1</li>
+                            <li>Ar-condicionado: 2</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,6 +162,12 @@ export default {
         padding: 20px;
     }
 
+    .titulo-salas{
+        margin-top: 40px;
+        margin-bottom: -20px;
+        color: #16697A;
+    }
+
     #card{
         width: 300px;
         height: 400px;
@@ -149,18 +182,59 @@ export default {
         margin-left: 50px;
         margin-top: 50px;
     }
-    button{
+    .but button{
         background-color: #489FB5;
-        border-radius: 20px;
-        padding: 20px;
+        padding: 15px;
         color: white;
+        border: #489FB5 solid 1px;
+        border-radius: 15px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
-    .card{
-        width: 500px;
-        height: 300px;
-        border: 1px solid #16697A;
+    .busca{
+        margin-top: -400px;
+        margin-right: -80px;
+        margin-bottom: 50px;
+    }
+    .busca .field{
+        display: inline-block;
+        margin: 20px;
+        
+    }
+    .busca .calendar{
+        border-radius:20px;
+        margin-left: 10px;
+        margin-top: 10px;
     }
 
+    #card-sala1, #card-sala2, #card-sala3{
+        width: 700px;
+        height: 300px;
+        border: 1px solid #16697A;
+        margin: 20px;
+        margin-left: 350px;
+        border-radius: 20px;
+        box-shadow: #16697A 1px 1px;
+    }
+
+    .card .card-content .content div{
+        display: inline-block;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    div .titulo-card{
+        margin-left: -120px;
+        text-align: left;
+        margin-top: -50px;
+
+    }
+
+    .card-info{
+        margin-left: 40px;
+        text-align: left;
+        font-size: 20px;
+    }
+    .card-info ul li{
+        list-style: none;
+    }
 </style>

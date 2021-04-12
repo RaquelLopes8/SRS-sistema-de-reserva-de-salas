@@ -1,19 +1,28 @@
 <template>
   <div id="app">
-    <!--<Login/>-->
-    <BuscarSalas/>
+    <Login/>
+    <!--<BuscarSalas/>
+    <ReservarSala/>
+    <Reservas/>
+    <Solicitacao/>-->
   </div>
 </template>
 
 <script>
-//import Login from './components/Login.vue';
-import BuscarSalas from './components/BuscarSalas';
+import Login from './components/Login.vue';
+//import BuscarSalas from './components/BuscarSalas.vue';
+//import ReservarSala from './components/ReservarSala.vue';
+//import Reservas from './components/Reservas.vue';
+//import Solicitacao from './components/Solicitacao.vue';
 
 export default {
   name: 'App',
   components: {
-    //Login,
-    BuscarSalas
+    Login,
+    //BuscarSalas,
+    //ReservarSala,
+   // Reservas,
+    //Solicitacao
   }
 }
 </script>
